@@ -269,13 +269,13 @@ const FEEDS = [
   {id:'mvdp',        name:'Martin van der Poel',     catId:4, type:'video',   url:'/proxy/yt/UC9FJaKI9uYeVHZh_cGFbXSg'},
 
   // ── ニュース・記事 ────────────────────────
-  {id:'note-bd',     name:'note #競技ダンス',        catId:5, type:'article', url:'/proxy/rss/note-ballroom'},
-  {id:'note-sd',     name:'note #社交ダンス',        catId:5, type:'article', url:'/proxy/rss/note-social-dance'},
-  {id:'note-ds',     name:'note #ダンススポーツ',    catId:5, type:'article', url:'/proxy/rss/note-dancesport'},
-  {id:'note-waltz',  name:'note #ワルツ',            catId:5, type:'article', url:'/proxy/rss/note-waltz'},
-  {id:'note-latin',  name:'note #ラテン',            catId:5, type:'article', url:'/proxy/rss/note-latin'},
-  {id:'danceview',   name:'ダンスビュウ',            catId:5, type:'article', url:'/proxy/rss/danceview'},
-  {id:'maekake',     name:'前掛けブログ',            catId:5, type:'article', url:'/proxy/rss/maekake'},
+  {id:'note-bd',     name:'note #競技ダンス',        catId:5, type:'article', url:'/.netlify/functions/rss?id=note-ballroom'},
+  {id:'note-sd',     name:'note #社交ダンス',        catId:5, type:'article', url:'/.netlify/functions/rss?id=note-social-dance'},
+  {id:'note-ds',     name:'note #ダンススポーツ',    catId:5, type:'article', url:'/.netlify/functions/rss?id=note-dancesport'},
+  {id:'note-waltz',  name:'note #ワルツ',            catId:5, type:'article', url:'/.netlify/functions/rss?id=note-waltz'},
+  {id:'note-latin',  name:'note #ラテン',            catId:5, type:'article', url:'/.netlify/functions/rss?id=note-latin'},
+  {id:'danceview',   name:'ダンスビュウ',            catId:5, type:'article', url:'/.netlify/functions/rss?id=danceview'},
+  {id:'maekake',     name:'前掛けブログ',            catId:5, type:'article', url:'/.netlify/functions/rss?id=maekake'},
 ];
 
 // ===== ステート =====
