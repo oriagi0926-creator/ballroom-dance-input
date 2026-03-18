@@ -245,32 +245,37 @@ const TM = {
 };
 
 // ===== フィード定義 =====
-// YouTubeはプロキシ経由 /proxy/yt/:channelId
-// RSSはプロキシ経由 /proxy/rss/:id
 const FEEDS = [
-  // --- 国際団体 ---
-  {id:'wdsf',       name:'WDSF DanceSportTotal', catId:1, type:'video',   url:'/proxy/yt/UC7nIDQ_jiPsbuK8D1fCjcLA'},
-  {id:'wdc',        name:'WDC Official',          catId:1, type:'video',   url:'/proxy/yt/UCrjAGTCIOnphH2NVpQSXNqw'},
-  {id:'blackpool',  name:'Blackpool Dance Fest.',  catId:1, type:'video',   url:'/proxy/yt/UCBuMwlP4mPIGBcPMoFalMtg'},
+  // ── 国際団体 ──────────────────────────────
+  {id:'wdsf',        name:'WDSF DanceSportTotal',  catId:1, type:'video',   url:'/proxy/yt/UC7nIDQ_jiPsbuK8D1fCjcLA'},
+  {id:'wdc',         name:'WDC Official',           catId:1, type:'video',   url:'/proxy/yt/UCrjAGTCIOnphH2NVpQSXNqw'},
+  {id:'blackpool',   name:'Blackpool Dance Fest.',   catId:1, type:'video',   url:'/proxy/yt/UCBuMwlP4mPIGBcPMoFalMtg'},
 
-  // --- 日本団体 ---
-  {id:'jbdf',       name:'JBDF公式',              catId:2, type:'video',   url:'/proxy/yt/UCNpxQtBt4MEFpBiO6NMACNA'},
-  {id:'jdsf',       name:'JDSF公式',              catId:2, type:'video',   url:'/proxy/yt/UCMgGSenMFGBCYB4nOZQ7QxA'},
-  {id:'jbdf-west',  name:'JBDF西部',              catId:2, type:'video',   url:'/proxy/yt/UCjTKzASpj2Du4OqVQuH6fCQ'},
+  // ── 日本団体 ──────────────────────────────
+  {id:'jbdf',        name:'JBDF公式',               catId:2, type:'video',   url:'/proxy/yt/UCNpxQtBt4MEFpBiO6NMACNA'},
+  {id:'jdsf',        name:'JDSF公式',               catId:2, type:'video',   url:'/proxy/yt/UCMgGSenMFGBCYB4nOZQ7QxA'},
+  {id:'jbdf-west',   name:'JBDF西部',               catId:2, type:'video',   url:'/proxy/yt/UCjTKzASpj2Du4OqVQuH6fCQ'},
 
-  // --- 大会・競技動画（人気チャンネル） ---
-  {id:'dance-ana',  name:'Dance Analysis',        catId:3, type:'video',   url:'/proxy/yt/UCmilicijas'},
-  {id:'stdance',    name:'SD Ballroom',            catId:3, type:'video',   url:'/proxy/yt/UCR9kBCy8TRbWlzNdFwgHBqw'},
-  {id:'dsitv',      name:'DSI TV',                 catId:3, type:'video',   url:'/proxy/yt/UCfWHr0kSFX-nmFGKIJq2mFw'},
+  // ── 大会・競技動画 ────────────────────────
+  {id:'dance-ana',   name:'Dance Analysis',         catId:3, type:'video',   url:'/proxy/yt/UCmilicijas'},
+  {id:'dsitv',       name:'DSI TV',                  catId:3, type:'video',   url:'/proxy/yt/UCfWHr0kSFX-nmFGKIJq2mFw'},
+  {id:'stdance',     name:'SD Ballroom',             catId:3, type:'video',   url:'/proxy/yt/UCR9kBCy8TRbWlzNdFwgHBqw'},
+  {id:'bbmusic',     name:'Best Ballroom Music',     catId:3, type:'video',   url:'/proxy/yt/UC0bYSnzAFRpxgRobH3SFuMw'},
+  {id:'bdtube',      name:'Ballroom Dance Tube',     catId:3, type:'video',   url:'/proxy/yt/UCN6sx4gQK-xDFQLSqkMoRBg'},
 
-  // --- テクニック・レッスン ---
-  {id:'shinya',     name:'社交ダンスch 信哉',      catId:4, type:'video',   url:'/proxy/yt/UCbC6_hbggPEtZECM9PiB4IA'},
-  {id:'dancelab',   name:'Dance Lab Japan',        catId:4, type:'video',   url:'/proxy/yt/UC0s_hVcX2hv1bK_4vGrWxbA'},
+  // ── テクニック・レッスン ──────────────────
+  {id:'shinya',      name:'社交ダンスch 信哉',       catId:4, type:'video',   url:'/proxy/yt/UCbC6_hbggPEtZECM9PiB4IA'},
+  {id:'dancelab',    name:'Dance Lab Japan',         catId:4, type:'video',   url:'/proxy/yt/UC0s_hVcX2hv1bK_4vGrWxbA'},
+  {id:'mvdp',        name:'Martin van der Poel',     catId:4, type:'video',   url:'/proxy/yt/UC9FJaKI9uYeVHZh_cGFbXSg'},
 
-  // --- ニュース・記事 ---
-  {id:'note-bd',    name:'note #競技ダンス',       catId:5, type:'article', url:'/proxy/rss/note-ballroom'},
-  {id:'note-sd',    name:'note #社交ダンス',       catId:5, type:'article', url:'/proxy/rss/note-social-dance'},
-  {id:'note-ds',    name:'note #ダンススポーツ',   catId:5, type:'article', url:'/proxy/rss/note-dancesport'},
+  // ── ニュース・記事 ────────────────────────
+  {id:'note-bd',     name:'note #競技ダンス',        catId:5, type:'article', url:'/proxy/rss/note-ballroom'},
+  {id:'note-sd',     name:'note #社交ダンス',        catId:5, type:'article', url:'/proxy/rss/note-social-dance'},
+  {id:'note-ds',     name:'note #ダンススポーツ',    catId:5, type:'article', url:'/proxy/rss/note-dancesport'},
+  {id:'note-waltz',  name:'note #ワルツ',            catId:5, type:'article', url:'/proxy/rss/note-waltz'},
+  {id:'note-latin',  name:'note #ラテン',            catId:5, type:'article', url:'/proxy/rss/note-latin'},
+  {id:'danceview',   name:'ダンスビュウ',            catId:5, type:'article', url:'/proxy/rss/danceview'},
+  {id:'maekake',     name:'前掛けブログ',            catId:5, type:'article', url:'/proxy/rss/maekake'},
 ];
 
 // ===== ステート =====

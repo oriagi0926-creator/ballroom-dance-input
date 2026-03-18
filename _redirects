@@ -1,7 +1,13 @@
 # YouTube RSS プロキシ
 /proxy/yt/:channelId  https://www.youtube.com/feeds/videos.xml?channel_id=:channelId  200
 
-# note RSS プロキシ
-/proxy/rss/note-ballroom     https://note.com/hashtag/%E7%AB%B6%E6%8A%80%E3%83%80%E3%83%B3%E3%82%B9.rss  200
-/proxy/rss/note-social-dance https://note.com/hashtag/%E7%A4%BE%E4%BA%A4%E3%83%80%E3%83%B3%E3%82%B9.rss  200
+# note RSS プロキシ（競技ダンス関連ハッシュタグ）
+/proxy/rss/note-ballroom     https://note.com/hashtag/%E7%AB%B6%E6%8A%80%E3%83%80%E3%83%B3%E3%82%B9.rss        200
+/proxy/rss/note-social-dance https://note.com/hashtag/%E7%A4%BE%E4%BA%A4%E3%83%80%E3%83%B3%E3%82%B9.rss        200
 /proxy/rss/note-dancesport   https://note.com/hashtag/%E3%83%80%E3%83%B3%E3%82%B9%E3%82%B9%E3%83%9D%E3%83%BC%E3%83%84.rss  200
+/proxy/rss/note-waltz        https://note.com/hashtag/%E3%83%AF%E3%83%AB%E3%83%84.rss                            200
+/proxy/rss/note-latin        https://note.com/hashtag/%E3%83%A9%E3%83%86%E3%83%B3%E3%83%80%E3%83%B3%E3%82%B9.rss  200
+
+# 専門メディア RSS
+/proxy/rss/danceview         https://www.danceview.co.jp/feed/                                                    200
+/proxy/rss/maekake           https://socialdance.asia/feed/                                                       200
