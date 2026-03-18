@@ -1,0 +1,7 @@
+# YouTube RSS プロキシ
+/proxy/yt/:channelId  https://www.youtube.com/feeds/videos.xml?channel_id=:channelId  200
+
+# note RSS プロキシ
+/proxy/rss/note-ballroom     https://note.com/hashtag/%E7%AB%B6%E6%8A%80%E3%83%80%E3%83%B3%E3%82%B9.rss  200
+/proxy/rss/note-social-dance https://note.com/hashtag/%E7%A4%BE%E4%BA%A4%E3%83%80%E3%83%B3%E3%82%B9.rss  200
+/proxy/rss/note-dancesport   https://note.com/hashtag/%E3%83%80%E3%83%B3%E3%82%B9%E3%82%B9%E3%83%9D%E3%83%BC%E3%83%84.rss  200
